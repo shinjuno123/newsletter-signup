@@ -5,9 +5,9 @@ const fs = require("fs");
 
 const app = express();
 const port = process.env.PORT || 8080;
-let rawData = fs.readFileSync("password.json");
+let rawData = fs.readFileSync(__dirname + "/password.json");
 let dataFromRawData = JSON.parse(rawData);
-
+console.log(dataFromRawData.apiKey);
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
