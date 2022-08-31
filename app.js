@@ -5,9 +5,9 @@ const fs = require("fs");
 
 const app = express();
 const port = process.env.PORT || 8080;
-// let rawData = fs.readFileSync(__dirname + "/password.json");
-// let dataFromRawData = JSON.parse(rawData);
-// console.log(dataFromRawData.apiKey);
+let rawData = fs.readFileSync(__dirname + "/password.json");
+let dataFromRawData = JSON.parse(rawData);
+console.log(dataFromRawData.apiKey);
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
 
   const options = {
     method: "POST",
-    auth: "junho:a9d284981ba41fbf7759309aaf6d68e2-us11",
+    auth: dataFromRawData.apiKey,
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
