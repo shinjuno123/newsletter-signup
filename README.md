@@ -8,7 +8,7 @@ This website project is a toy project to utilize Express.js I learned.
 
 - Express.js
 - HTML
-- Css
+- CSS
 - Bootstrap
 
 ## :zap: Sign Up Page
