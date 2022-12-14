@@ -21,8 +21,8 @@ You have to input first and family name and email for subscribe.
 
 
 ## :zap: Success Page
+![newsletter success page](https://user-images.githubusercontent.com/72008909/207583670-c3d63873-9978-43cd-88ff-92abd54931a7.png)
 
-![mailchimp Subscribe](https://user-images.githubusercontent.com/72008909/207358663-cd08ff0e-39e0-4162-929e-98604a39a454.png)
 
 When subscribe is successful, You can see this page.
 
