@@ -4,7 +4,7 @@
 
 This website project is a toy project to utilize Express.js I learned.
 
-## :zap: Technique Skill
+## :zap: Technical Stack
 
 - Express.js
 - HTML
